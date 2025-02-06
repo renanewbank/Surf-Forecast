@@ -5,7 +5,6 @@ Este projeto exibe um **relatório de previsão do tempo para surf**, utilizando
 ## 🚀 Funcionalidades
 - Exibe previsão das **ondas, vento, temperatura da água e possibilidade de chuva**.
 - Dados são **atualizados dinamicamente** ao clicar no botão "Ver Previsão".
-- Interface responsiva e intuitiva.
 
 ## 🛠️ Tecnologias Utilizadas
 - **HTML**: Estrutura do site
@@ -33,19 +32,15 @@ Este projeto exibe um **relatório de previsão do tempo para surf**, utilizando
 3. **Abra o arquivo `index.html` no navegador**.
 
 ## 🔗 API Utilizada
-- [Meteoblue Weather API](https://my.meteoblue.com)
+- [Meteoblue Weather API](https://content.meteoblue.com/en)
 
 ## 🎨 Layout
-A interface apresenta um design limpo e responsivo, priorizando a legibilidade das informações meteorológicas.
+A interface apresenta um design limpo e intuitivo, priorizando a legibilidade das informações meteorológicas.
 
 ## 📌 Melhorias Futuras
-- Adicionar previsão semanal
 - Melhorar a responsividade para dispositivos móveis
 - Incluir gráficos para visualização dos dados
 
 ## 🏄‍♂️ Autor
-- **[Seu Nome]** - [LinkedIn](https://www.linkedin.com/in/seu-perfil) | [GitHub](https://github.com/seu-usuario)
-
----
-Feito com ❤️ para surfistas e amantes do mar! 🌊
+- **Renan Oliveira Ewbank** - [LinkedIn](https://www.linkedin.com/in/renanewbank/)
 
