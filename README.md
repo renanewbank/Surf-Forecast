@@ -22,7 +22,7 @@ Este projeto exibe um **relatório de previsão do tempo para surf**, utilizando
 
 
 ## API Utilizada
-- [Meteoblue Weather API](https://content.meteoblue.com/en)
+- [Meteoblue Weather API](https://content.meteoblue.com/en/business-solutions/weather-apis)
 
 ## Layout
 A interface apresenta um design limpo e intuitivo, priorizando a legibilidade das informações meteorológicas.
