@@ -20,16 +20,6 @@ Este projeto exibe um **relatório de previsão do tempo para surf**, utilizando
 └── README.md        # Documentação do projeto
 ```
 
-## Como Rodar o Projeto
-1. **Clone o repositório**:
-   ```sh
-   git clone https://github.com/seu-usuario/surf-forecast.git
-   ```
-2. **Acesse a pasta do projeto**:
-   ```sh
-   cd surf-forecast
-   ```
-3. **Abra o arquivo `index.html` no navegador**.
 
 ## API Utilizada
 - [Meteoblue Weather API](https://content.meteoblue.com/en)
