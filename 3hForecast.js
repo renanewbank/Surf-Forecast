@@ -1,4 +1,4 @@
-function tabela3h(obj) {
+function tabela(obj) {
 
     let latitude = document.querySelector('#span-latitude');
     latitude.innerHTML = obj.metadata.latitude + " graus";
@@ -6,8 +6,12 @@ function tabela3h(obj) {
     let longitude = document.querySelector('#span-longitude');
     longitude.innerHTML = obj.metadata.longitude + " graus";
     
+    let divTable = document.createElement("div");
+    divTable.classList.add("divTable")
+
     let table = document.createElement("table");
     table.id = "forecastTable"; 
+
     let thead = document.createElement("thead");
     let trHead = document.createElement("tr");
   
@@ -45,6 +49,7 @@ function tabela3h(obj) {
     trHead.appendChild(thPrecip);
     thead.appendChild(trHead);
     table.appendChild(thead);
+    divTable.appendChild(table);
 
     let tbody = document.createElement("tbody");
     
@@ -62,11 +67,11 @@ function tabela3h(obj) {
         tdDate.classList.add("day");
 
         let hourSplit = date.split(' ');
-        
         let dateSplit = hourSplit[0].split('-')
 
         tdDate.innerHTML = dateSplit[2] + "/" + dateSplit[1];
         tdHour.innerHTML = hourSplit[1];
+        
         tdHeight.innerHTML = obj.data_3h.surfwave_height[index];
         tdPeriod.innerHTML = obj.data_3h.swell_meanperiod[index];
         tdWindSpeed.innerHTML = obj.data_3h.windspeed[index];
@@ -86,30 +91,34 @@ function tabela3h(obj) {
     });
     
     table.appendChild(tbody);
-    document.body.appendChild(table);
+    document.body.appendChild(divTable);
 }
 
 function forecast() {
     fetch("https://my.meteoblue.com/packages/basic-3h_sea-3h?apikey=9OKc5M2joNPv7Jit&lat=-23.9608&lon=-46.3336&asl=12&format=json")
     .then((response) => response.json())
-    .then((obj) => tabela3h(obj))
+    .then((obj) => tabela(obj))
 }
 
 function tableAdd() {
-    let buttonSemanal = document.querySelector("#btn3h");
+    let buttonPrevisao = document.querySelector("#btn-prev");
 
-    buttonSemanal.addEventListener("click", () => {
-       
+    buttonPrevisao.addEventListener("click", () => {       
         let table = document.querySelector("#forecastTable");
+        let latitude = document.querySelector('#span-latitude');
+        let longitude = document.querySelector('#span-longitude');
 
         if (table) {
             table.remove();
-            buttonSemanal.innerHTML = "Ver Previsão";
-            buttonSemanal.classList.remove("button-voltar");
+            buttonPrevisao.innerHTML = "Ver Previsão";
+            buttonPrevisao.classList.remove("button-voltar");
+
+            latitude.innerHTML = "";
+            longitude.innerHTML = "";
         } else {
             forecast();
-            buttonSemanal.innerHTML = "Voltar";
-            buttonSemanal.classList.add("button-voltar");
+            buttonPrevisao.innerHTML = "Voltar";
+            buttonPrevisao.classList.add("button-voltar");
         }
     });
 }
