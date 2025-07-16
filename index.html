@@ -4,38 +4,28 @@
     <meta charset="UTF-8">
     <title>Surf Forecast</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="dayForecast.js"></script> -->
     <script src="3hForecast.js"></script>
   
   </head>
   <body>
 
-    <header>
-      <h1>Surf Forecast</h1>
-    </header> 
+    <h1>Surf Forecast</h1>
 
     <h2>Relatório de condições marítimas com intervalos de 3 horas para o seu local</h2>
-    
 
-    <button id="btn3h">Ver Previsão</button>
-
-    <section id="local-info">
-      <div class="coord">
-        Coordenadas do seu local
-      </div>
-      <div>
-        <span>Latitude: </span><span id="span-latitude"></span>
-      </div>
-      <div>
-        <span>Longitude: </span><span id="span-longitude"></span>
-      </div>
-    </section>
+    <button id="btn-prev">Ver Previsão</button>
 
     <section>
-      <!-- <button id="btnWeek">Previsão 24h</button> -->
+      <div class="card-coord">
+        <p class="card-title">Coordenadas do local</p>
+        <div class="coord">
+          <p>Latitude: <span id="span-latitude"></span></p>
+          <p>Longitude: <span id="span-longitude"></span></p>
+        </div>
+      </div>
     </section>
 
-   <footer>Meteoblue Weather API por Renan Ewbank</footer>
+   <footer>Meteoblue Weather API - Renan Ewbank</footer>
 
   </body>
 </html>
