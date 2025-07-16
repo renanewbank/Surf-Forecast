@@ -13,9 +13,9 @@ h1 {
   text-align: center;
   padding: 20px;
   color:#ffffff;
-  font-size: 45px;
+  font-size: 64px;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin: 20px 0 10px;
 }
 
 h2 {
@@ -23,7 +23,7 @@ h2 {
   font-weight: normal;
   color: #fff;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -31,6 +31,7 @@ table {
   border-collapse: collapse;
   font-weight: normal;
   margin: 40px;
+  text-align: center;
   }
 
 th, td {
@@ -74,11 +75,6 @@ button {
   margin-right: auto;
 }
 
-section {
-  margin: 20px;
-  text-align: center;
-}
-
 button:hover {
   background-color: #2c3c48;
   color: #fff;
@@ -89,26 +85,28 @@ button:hover {
   background-color: #d1d1d1;
 }
 
-p {
-  margin: 10px;
-  color: #fff;
-}
 
-div, span {
-  margin: 3px;
-  text-align: start;
-}
-
-#local-info {
+.card-coord {
   background-color: #2c3c48;
   color: #fff;;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   width: fit-content;
+
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom:9px
+}
+
+section {
+  display: flex;
   justify-content: center;
 }
 
-.coord {
-  font-size: 20px;
-  padding: 5px;
+
+.divTable {
+  display: flex;
+  justify-content: center;
 }
